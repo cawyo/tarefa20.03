@@ -1,4 +1,4 @@
-# Raciocinio Algoritmico 
+# Raciocínio Algorítmico
 
 Atividade de operações condicionais realizada em sala de aula no dia 20/03
 
