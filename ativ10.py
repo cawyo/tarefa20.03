@@ -1,9 +1,12 @@
 uni = int(input("1 - PUCPR\n2 - UNICAMP\n/////////\nDigite a instituição de ensino: "))
 
-x = float(input("Digite a nota do primeiro bimestre: "))
-y = float(input("Digite a nota do segundo bimestre: "))
+while uni !=1 and uni !=2:
+    uni = int(input("Digite uma instituição válida: "))
 
-med = x+y/2
+nota1 = float(input("Digite a nota do primeiro bimestre: "))
+nota2 = float(input("Digite a nota do segundo bimestre: "))
+
+med = nota1+nota2/2
 
 if uni == 1:
     if med >= 7:
@@ -12,9 +15,10 @@ if uni == 1:
         print(f"Universidade: PUCPR\nMédia: {med}\nAluno em exame")
     else:
         print(f"Universidade: PUCPR\nMédia: {med}\nAluno reprovado")
-if uni == 2:
+else:
     if med >= 5:
         print(f"Universidade: UNICAMP\nMédia: {med}\nAluno aprovado")
     else:
-        print(f"Universidade: UNICAMP\nMédia: {med}\nAluno exame")
+        print(f"Universidade: UNICAMP\nMédia: {med}\nAluno em exame")
+
         
